@@ -43,7 +43,6 @@ Implementacija bo raziskovala uporabo:
 
 ### Sampler in reprodukcija instrumentov
 
-
 Za zvočno reprodukcijo dodatnih inštrumentov bo sistem uporabljal **sampler**, ki omogoča realistično in računsko učinkovito predvajanje različnih barv zvoka. Vsak inštrument je definiran kot nabor vnaprej posnetih vzorcev (ang. *multi-sample set*), organiziranih po višini tona in jakosti udarca.
 
 Za izhodiščni nabor zvokov bo projekt uporabljal odprtokodno zbirko **FreePats**, ki vsebuje širok izbor realističnih inštrumentnih vzorcev. Ta zbirka omogoča enostavno razširitev sistema z dodatnimi barvami zvoka brez licenčnih omejitev, kar je idealno za prototipiranje in raziskovalne namene.
