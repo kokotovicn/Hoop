@@ -31,6 +31,7 @@ Pri kreiranju lekcij je pomembno naslednje:
 
 Kreativni del naj bo vseboval več različnih funkcionalnosti. Glavna od teh bo looper, na kateri uporabnik lahko posname svojo idejo/motiv. Nato sistem analizira posneto in uporabniku ponuja možnost slojenja drugih inštrumentov, katere lahko 'kupuje' z uporabo točk pridobljenih pri opravljanju lekcij. Te inštrumente lahko nastavlja v druge, komplementarne (ali tudi ne, uporabniku mora biti na voljo čim večja kreativnost) harmonije in ritme tega motiva. Na voljo bo tudi možnost prirejanja beata tej ideji v obliki samplov iz različnih žanrov. Uporabnik bo na koncu lahko svojo posneto idejo izvozil kot audio fajl. Zaželjene so tudi funkcije oglaševalca, kvantizacije, pitch-correctiona in na koncu ponujanja nove glasbe uporabniku, ki je podobna temu, kar on kreira.
 
+
 ### Tehnološka zasnova
 
 Implementacija bo raziskovala uporabo:
@@ -39,6 +40,15 @@ Implementacija bo raziskovala uporabo:
 - **samplerja**, ki se bo uporabljal za generiranje dodatnih inštrumentov,
 - **grafičnega uporabniškega vmesnika** za intuitivno delo z instrumenti in lekcijami,
 - **gamifikacijskih mehanizmov** za sledenje napredku in spodbujanje redne uporabe.
+
+### Sampler in reprodukcija instrumentov
+
+
+Za zvočno reprodukcijo dodatnih inštrumentov bo sistem uporabljal **sampler**, ki omogoča realistično in računsko učinkovito predvajanje različnih barv zvoka. Vsak inštrument je definiran kot nabor vnaprej posnetih vzorcev (ang. *multi-sample set*), organiziranih po višini tona in jakosti udarca.
+
+Za izhodiščni nabor zvokov bo projekt uporabljal odprtokodno zbirko **FreePats**, ki vsebuje širok izbor realističnih inštrumentnih vzorcev. Ta zbirka omogoča enostavno razširitev sistema z dodatnimi barvami zvoka brez licenčnih omejitev, kar je idealno za prototipiranje in raziskovalne namene.
+
+V učnem delu se sampler uporablja za prikaz referenčnih tonov, akordov ali intervalov, ki jih mora uporabnik prepoznati ali ponoviti. V kreativnem delu pa predstavlja jedro ustvarjalnega okolja, saj uporabnik z njim lahko dodaja sloje različnih inštrumentov na svoj motiv, pri čemer nove inštrumente postopoma odklepa z uporabo točk, pridobljenih skozi lekcije. Ta mehanizem združuje učenje in kreativnost ter omogoča postopno širjenje zvočnega sveta aplikacije.
 
 ### Analiza ritma
 
